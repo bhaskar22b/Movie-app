@@ -1,0 +1,83 @@
+.fav-page {
+  width: 100%;
+	color: #e8f5f0;
+	font-family: "Poppins", sans-serif;
+	box-sizing: border-box;
+	padding: 40px;
+	background: linear-gradient(90deg, #000000, #173221, #20623c);
+  height: 670px;
+}
+
+.favorites {
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #000000; /* dark background */
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+
+.favorites h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #19cf78; /* bright green title */
+  text-shadow: 2px 2px 6px rgba(25, 207, 120, 0.4);
+}
+
+.favorites-empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #173221; /* dark green background */
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.favorites-empty h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #229759; /* secondary green */
+}
+
+.favorites-empty p {
+  color: #b5d9c9; /* soft green-gray */
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Favorite button */
+.favorite-btn {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666; /* default muted */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.favorite-btn:hover {
+  color: #19cf78; /* green hover */
+  transform: scale(1.1);
+}
+
+.favorite-btn.active {
+  color: #e50914; /* Netflix red for "favorited" */
+}
+
+/* Animation for new favorites being added */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.movies-grid > * {
+  animation: fadeIn 0.3s ease-out forwards;
+}

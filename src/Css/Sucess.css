@@ -1,0 +1,28 @@
+.success-page h3 {
+	font-size: 22px;
+	color: #ff4d4f;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.success-page p {
+	font-size: 22px;
+	color: #3ea264;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.success-page button {
+	margin-top: 1.5rem;
+	width: auto;
+	padding: 12px 18px;
+	font-size: 17px;
+	background: #14af65;
+	border-radius: 7px;
+	border: 1px;
+    transition: background-color 0.25s, transform 0.2s;
+}
+
+.success-page button:hover{
+    background-color: #0c6238;
+}

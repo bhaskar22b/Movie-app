@@ -1,0 +1,46 @@
+.scroll-buttons {
+  position: fixed;
+  right: 30px;
+  z-index: 1000;
+}
+
+.scroll-buttons-2 {
+	position: fixed;
+	z-index: 1000;
+	bottom: 30px;
+	right: 30px;
+}
+
+.scroll-btn {
+	background-color: rgba(255, 255, 255, 0.1);
+	border: 2px solid #205f3b;
+	color: #205f3b;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease;
+	backdrop-filter: blur(6px);
+}
+
+.scroll-btn:hover {
+  background-color: #205f3b;
+  color: white;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .scroll-buttons {
+    right: 20px;
+	/* margin-top: -3px; */
+	margin-top: 54px;
+  }
+
+ .scroll-buttons-2 {
+	bottom: 90px;
+	right: 20px;
+}
+}

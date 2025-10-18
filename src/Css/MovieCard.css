@@ -1,0 +1,143 @@
+.movie-card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #000000; /* black base */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.movie-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 6px 18px rgba(25, 207, 120, 0.35);
+}
+
+.movie-poster {
+  position: relative;
+  aspect-ratio: 2/3;
+  width: 100%;
+}
+
+.movie-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.85)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.movie-card:hover .movie-overlay {
+  opacity: 1;
+}
+
+/* Favorite Button */
+.favorite-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #19cf78; /* green by default */
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  background-color: rgba(23, 50, 33, 0.8);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.25s, transform 0.2s, color 0.25s;
+}
+
+.favorite-btn:hover {
+  background-color: #229759;
+  transform: scale(1.15);
+  color: #ffffff;
+}
+
+.favorite-btn.active {
+  color: #e50914; /* Netflix red when active */
+}
+
+/* Rating Select Dropdown */
+.rating-select {
+  background-color: #173221;
+  color: #19cf78;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  transition: background-color 0.25s;
+}
+
+.rating-select:hover {
+  background-color: #229759;
+  color: #ffffff;
+}
+
+/* Movie Info Section */
+.movie-info {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.movie-info h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #19cf78;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.movie-info p {
+  color: #b5d9c9;
+  font-size: 0.9rem;
+}
+
+/* User Rating Display */
+.user-rating {
+  color: #ffd700; /* gold stars */
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .movie-card {
+    font-size: 0.9rem;
+  }
+
+  .movie-info {
+    padding: 0.75rem;
+  }
+
+  .favorite-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+  }
+}

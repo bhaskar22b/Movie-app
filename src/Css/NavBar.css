@@ -1,0 +1,97 @@
+/* Navbar theme with green gradient + modern font */
+.navbar {
+  background: linear-gradient(90deg, #000000, #173221, #20623c);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  font-family: 'Poppins', sans-serif; /* modern clean font */
+  color: #ffffff;
+}
+
+/*remove fixes*/
+.navbar {
+  position: fixed;       /* Makes it stay in one place */
+  top: 0;                /* Stick to the top */
+  left: 0;               /* Align from left edge */
+  z-index: 1000;         /* Keeps it above other elements */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  width: 96%;
+}
+
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #19cf78; /* highlight green */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand a {
+	color: #fff;
+}
+
+.navbar-brand a:hover {
+	color: #8f9c94;
+}
+
+.navbar-brand:hover {
+  color: #229759; /* darker green hover */
+}
+
+.Nav-link {
+	color: #fff;
+}
+
+.Nav-link:hover {
+	color: #8f9c94;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: #229759; /* medium green hover */
+  color: #ffffff;
+}
+
+.nav-link.active {
+  background-color: #19cf78; /* active state */
+  color: #000000;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.4rem;
+  }
+
+  .navbar-links {
+    gap: 1rem;
+  }
+
+  .nav-link {
+    padding: 0.5rem;
+  }
+}
+
+

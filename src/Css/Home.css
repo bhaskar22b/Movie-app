@@ -1,0 +1,122 @@
+.home {
+  padding: 2rem 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #000000; /* dark background */
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+}
+
+/*remove*/
+body {
+  padding-top: 60px; /* equal to navbar height */
+}
+html {
+	background: black;
+}
+
+
+/* .main-content {
+	width: 100%;
+	background: linear-gradient(90deg, #000000, #173221, #20623c);
+} */
+
+.error-message {
+	font-size: 20px;
+	margin-left: 0px;
+	background: #173221;
+	padding: 7px;
+	padding-left: 16px;
+}
+
+.loading {
+  font-size: 20px;
+	margin-left: 0px;
+	background: #173221;
+	padding: 7px;
+	padding-left: 16px;
+}
+
+.search-form {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  display: flex;
+  gap: 1rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.home-search-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #173221; /* dark green input */
+  color: #ffffff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.search-input:hover{
+  background-color: #224b31;
+}
+
+.home-search-btn {
+	background: #173221;
+	border: 1px;
+	color: #8f9c94;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 15px;
+  cursor: pointer;
+}
+
+.search-btn:hover{
+  background-color: #224b31;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #19cf78; /* glow green on focus */
+}
+
+.search-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #19cf78; /* bright green */
+  color: #000000;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #229759; /* darker green hover */
+  color: #ffffff;
+}
+
+@media (max-width: 639px) {
+  .home {
+    padding: 1rem 0;
+  }
+
+  .search-form {
+    margin-bottom: 1rem;
+    /* flex-direction: column; */
+    flex-direction: row;
+  }
+
+  .search-button {
+    width: 100%; /* full width button on mobile */
+  }
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
