@@ -11,7 +11,7 @@ import Contact from './Pages/Contact'
 import SuccessPage from './Pages/SuccessPage'
 import MovieDetail from './Pages/MovieDetail'
 import { SliderProvider } from './Contexts/SliderContext'
-import Footer from './Component/footer'
+import Footer from './Component/Footer'
 
 const App = () => {
   return (
