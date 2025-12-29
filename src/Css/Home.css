@@ -1,5 +1,5 @@
 .home {
-  padding: 2rem 0;
+  padding: 4rem 0;
   width: 100%;
   box-sizing: border-box;
   background-color: #000000; /* dark background */
@@ -10,9 +10,7 @@
 /*remove*/
 body {
   padding-top: 60px; /* equal to navbar height */
-}
-html {
-	background: black;
+  background: black;
 }
 
 
@@ -98,7 +96,7 @@ html {
 
 @media (max-width: 639px) {
   .home {
-    padding: 1rem 0;
+    padding: 4rem 0;
   }
 
   .search-form {
